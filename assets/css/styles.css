@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.icono-sesion {
+  display: inline-block;
+  color: #333333;
+  transition: transform 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+.icono-sesion:hover {
+  transform: scale(1.1);
+}
