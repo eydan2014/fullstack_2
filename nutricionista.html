@@ -4,14 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Panel del nutricionista | NutriVida</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <header>
     <h1>NutriVida</h1>
-    <nav aria-label="Navegación principal">
+    <nav aria-label="Navegacion principal">
       <ul>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="usuario.html">Paciente</a></li>
-        <li><a href="secretaria.html">Secretaría</a></li>
+        <li><a href="secretaria.html">Secretaria</a></li>
         <li><a href="nutricionista.html" aria-current="page">Nutricionista</a></li>
         <li><a href="agendar.html">Agendar</a></li>
         <li><a href="las-citas.html">Las citas</a></li>
@@ -22,7 +24,7 @@
   <main>
     <section>
       <h2>Panel del nutricionista</h2>
-      <p>Esta página permite revisar la agenda y registrar el progreso de los pacientes asignados.</p>
+      <p>Esta pagina permite revisar la agenda y registrar el progreso de los pacientes asignados.</p>
     </section>
 
     <section>
@@ -40,14 +42,14 @@
         <tbody>
           <tr>
             <td>09:00</td>
-            <td>María González</td>
+            <td>Maria Gonzalez</td>
             <td>Control nutricional</td>
             <td>Confirmada</td>
           </tr>
           <tr>
             <td>10:30</td>
-            <td>Juan López</td>
-            <td>Evaluación inicial</td>
+            <td>Juan Lopez</td>
+            <td>Evaluacion inicial</td>
             <td>Pendiente</td>
           </tr>
         </tbody>
@@ -55,14 +57,14 @@
     </section>
 
     <section>
-      <h2>Registrar medición</h2>
+      <h2>Registrar medicion</h2>
       <form action="nutricionista.html" method="get">
         <p>
           <label for="paciente">Paciente</label><br>
           <select id="paciente" name="paciente" required>
             <option value="">Seleccione un paciente</option>
-            <option value="maria-gonzalez">María González</option>
-            <option value="juan-lopez">Juan López</option>
+            <option value="maria-gonzalez">Maria Gonzalez</option>
+            <option value="juan-lopez">Juan Lopez</option>
           </select>
         </p>
 
@@ -72,7 +74,7 @@
         </p>
 
         <p>
-          <label for="estatura">Estatura en centímetros</label><br>
+          <label for="estatura">Estatura en centimetros</label><br>
           <input id="estatura" name="estatura" type="number" min="50" max="250" required>
         </p>
 
@@ -81,13 +83,13 @@
           <textarea id="observaciones" name="observaciones" maxlength="500" rows="5"></textarea>
         </p>
 
-        <button type="submit">Registrar medición</button>
+        <button type="submit">Registrar medicion</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>Clínica NutriVida, Temuco</p>
+    <p>Clinica NutriVida, Temuco</p>
   </footer>
 </body>
 </html>

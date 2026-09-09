@@ -4,14 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agendar una cita | NutriVida</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <header>
     <h1>NutriVida</h1>
-    <nav aria-label="Navegación principal">
+    <nav aria-label="Navegacion principal">
       <ul>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="usuario.html">Paciente</a></li>
-        <li><a href="secretaria.html">Secretaría</a></li>
+        <li><a href="secretaria.html">Secretaria</a></li>
         <li><a href="nutricionista.html">Nutricionista</a></li>
         <li><a href="agendar.html" aria-current="page">Agendar</a></li>
         <li><a href="las-citas.html">Las citas</a></li>
@@ -22,7 +24,7 @@
   <main>
     <section>
       <h2>Agendar una cita</h2>
-      <p>Complete los datos para solicitar una atención nutricional.</p>
+      <p>Complete los datos para solicitar una atencion nutricional.</p>
 
       <form action="las-citas.html" method="get">
         <fieldset>
@@ -39,12 +41,12 @@
           </p>
 
           <p>
-            <label for="correo">Correo electrónico</label><br>
+            <label for="correo">Correo electronico</label><br>
             <input id="correo" name="correo" type="email" maxlength="100" autocomplete="email" required>
           </p>
 
           <p>
-            <label for="telefono">Teléfono</label><br>
+            <label for="telefono">Telefono</label><br>
             <input id="telefono" name="telefono" type="tel" maxlength="15" autocomplete="tel" required>
           </p>
         </fieldset>
@@ -56,10 +58,10 @@
             <label for="servicio">Servicio</label><br>
             <select id="servicio" name="servicio" required>
               <option value="">Seleccione un servicio</option>
-              <option value="evaluacion">Evaluación nutricional</option>
+              <option value="evaluacion">Evaluacion nutricional</option>
               <option value="control">Control nutricional</option>
-              <option value="deportiva">Nutrición deportiva</option>
-              <option value="vegetariana">Alimentación vegetariana o vegana</option>
+              <option value="deportiva">Nutricion deportiva</option>
+              <option value="vegetariana">Alimentacion vegetariana o vegana</option>
             </select>
           </p>
 
@@ -69,8 +71,8 @@
               <option value="">Seleccione un profesional</option>
               <option value="camila-soto">Camila Soto</option>
               <option value="rodrigo-silva">Rodrigo Silva</option>
-              <option value="paula-martinez">Paula Martínez</option>
-              <option value="andres-morales">Andrés Morales</option>
+              <option value="paula-martinez">Paula Martinez</option>
+              <option value="andres-morales">Andres Morales</option>
             </select>
           </p>
 
@@ -103,7 +105,7 @@
   </main>
 
   <footer>
-    <p>Clínica NutriVida, Temuco</p>
+    <p>Clinica NutriVida, Temuco</p>
   </footer>
 </body>
 </html>
