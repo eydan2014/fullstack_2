@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendar una cita | NutriVida</title>
+</head>
+<body>
+  <header>
+    <h1>NutriVida</h1>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="usuario.html">Paciente</a></li>
+        <li><a href="secretaria.html">Secretaría</a></li>
+        <li><a href="nutricionista.html">Nutricionista</a></li>
+        <li><a href="agendar.html" aria-current="page">Agendar</a></li>
+        <li><a href="las-citas.html">Las citas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Agendar una cita</h2>
+      <p>Complete los datos para solicitar una atención nutricional.</p>
+
+      <form action="las-citas.html" method="get">
+        <fieldset>
+          <legend>Datos del paciente</legend>
+
+          <p>
+            <label for="nombre">Nombre completo</label><br>
+            <input id="nombre" name="nombre" type="text" maxlength="100" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="rut">RUT sin puntos ni guion</label><br>
+            <input id="rut" name="rut" type="text" minlength="8" maxlength="9" placeholder="12345678K" required>
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico</label><br>
+            <input id="correo" name="correo" type="email" maxlength="100" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="telefono">Teléfono</label><br>
+            <input id="telefono" name="telefono" type="tel" maxlength="15" autocomplete="tel" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos de la cita</legend>
+
+          <p>
+            <label for="servicio">Servicio</label><br>
+            <select id="servicio" name="servicio" required>
+              <option value="">Seleccione un servicio</option>
+              <option value="evaluacion">Evaluación nutricional</option>
+              <option value="control">Control nutricional</option>
+              <option value="deportiva">Nutrición deportiva</option>
+              <option value="vegetariana">Alimentación vegetariana o vegana</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="nutricionista">Nutricionista</label><br>
+            <select id="nutricionista" name="nutricionista" required>
+              <option value="">Seleccione un profesional</option>
+              <option value="camila-soto">Camila Soto</option>
+              <option value="rodrigo-silva">Rodrigo Silva</option>
+              <option value="paula-martinez">Paula Martínez</option>
+              <option value="andres-morales">Andrés Morales</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="fecha">Fecha</label><br>
+            <input id="fecha" name="fecha" type="date" required>
+          </p>
+
+          <p>
+            <label for="hora">Hora</label><br>
+            <input id="hora" name="hora" type="time" required>
+          </p>
+
+          <p>
+            <label for="motivo">Motivo de la consulta</label><br>
+            <textarea id="motivo" name="motivo" minlength="10" maxlength="300" rows="5" required></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <label>
+            <input name="consentimiento" type="checkbox" required>
+            Confirmo que los datos ingresados son correctos.
+          </label>
+        </p>
+
+        <button type="submit">Solicitar cita</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Clínica NutriVida, Temuco</p>
+  </footer>
+</body>
+</html>
