@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Las citas | NutriVida</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 <body>
   <header>
@@ -30,8 +30,9 @@
 
     <section>
       <h2>Proximas citas</h2>
+      <div class="tabla-contenedor">
       <table>
-        <caption>Listado provisional de citas</caption>
+        <caption>Citas guardadas en este navegador</caption>
         <thead>
           <tr>
             <th scope="col">Paciente</th>
@@ -40,37 +41,25 @@
             <th scope="col">Fecha</th>
             <th scope="col">Hora</th>
             <th scope="col">Estado</th>
+            <th scope="col">Acciones</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Paciente de demostracion</td>
-            <td>Control nutricional</td>
-            <td>Camila Soto</td>
-            <td>15-09-2026</td>
-            <td>10:00</td>
-            <td>Confirmada</td>
-          </tr>
-          <tr>
-            <td>Felipe Muñoz</td>
-            <td>Nutricion deportiva</td>
-            <td>Rodrigo Silva</td>
-            <td>16-09-2026</td>
-            <td>12:00</td>
-            <td>Pendiente</td>
-          </tr>
-        </tbody>
+        <tbody id="cuerpo-citas"></tbody>
       </table>
+      </div>
+      <p id="sin-citas">No hay citas guardadas.</p>
     </section>
 
     <section>
-      <h2>Acciones pendientes</h2>
-      <p>Las opciones para confirmar, cancelar y reprogramar se implementaran mas adelante con JavaScript.</p>
+      <h2>Datos de demostracion</h2>
+      <p>Las citas se guardan solamente en este navegador. El proyecto no utiliza backend.</p>
     </section>
   </main>
 
   <footer>
     <p>Clinica NutriVida, Temuco</p>
   </footer>
+  <script src="assets/js/datos.js"></script>
+  <script src="assets/js/citas.js"></script>
 </body>
 </html>
