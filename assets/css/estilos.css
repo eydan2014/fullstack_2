@@ -166,3 +166,15 @@ footer {
     overflow-x: auto;
   }
 }
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+iframe {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto 0;
+  border: 0;
+}
