@@ -3,8 +3,8 @@ import { screen } from "@testing-library/react";
 import { iniciar } from "../test/renderizarApp";
 import { strClaveDatos } from "../data/persistencia";
 
-describe("Historial", () => {
-  it("P08 guarda una medicion del paciente asignado y calcula su IMC RF10", async () => {
+describe("Historial - integracion", () => {
+  it("I06 guarda una medicion del paciente asignado y calcula su IMC RF10", async () => {
     const { objPersona } = iniciar("/fichas", "NUT001");
     await objPersona.type(screen.getByLabelText("Peso (kg)"), "72");
     await objPersona.type(screen.getByLabelText("Estatura (cm)"), "180");

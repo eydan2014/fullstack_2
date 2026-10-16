@@ -4,8 +4,8 @@ import { iniciar } from "../test/renderizarApp";
 import { lunesFuturo } from "../test/fixtures";
 import { strClaveDatos } from "../data/persistencia";
 
-describe("Agendar", () => {
-  it("P05 impide continuar con una solicitud incompleta RF06", async () => {
+describe("Agendar - integracion", () => {
+  it("I03 impide continuar con una solicitud incompleta RF06", async () => {
     const { objPersona } = iniciar("/agendar");
     await objPersona.click(
       screen.getByRole("button", { name: /Revisar solicitud/ }),
@@ -21,7 +21,9 @@ describe("Agendar", () => {
     ).toHaveLength(1);
   });
 
-  it("P06 registra una solicitud valida y muestra su comprobante RF05", async () => {
+  // ---------- Prueba I04: solicitud valida ----------
+
+  it("I04 registra una solicitud valida y muestra su comprobante RF05", async () => {
     const { objPersona } = iniciar("/agendar");
     await objPersona.selectOptions(
       screen.getByLabelText("Servicio o plan"),

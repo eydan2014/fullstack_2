@@ -3,8 +3,8 @@ import { screen } from "@testing-library/react";
 import { iniciar } from "../test/renderizarApp";
 import { strClaveDatos } from "../data/persistencia";
 
-describe("Citas", () => {
-  it("P07 cancela una cita propia conservando su registro RF07", async () => {
+describe("Citas - integracion", () => {
+  it("I05 cancela una cita propia conservando su registro RF07", async () => {
     vi.spyOn(window, "confirm").mockReturnValue(true);
     const { objPersona } = iniciar("/las-citas");
     await objPersona.click(

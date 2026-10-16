@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest";
 import { screen } from "@testing-library/react";
 import { iniciar } from "../test/renderizarApp";
 
-describe("Servicios", () => {
-  it("P04 actualiza los resultados cuando cambia el filtro de busqueda RF04", async () => {
+describe("Servicios - integracion", () => {
+  it("I02 actualiza los resultados cuando cambia el filtro de busqueda RF04", async () => {
     const { objPersona } = iniciar("/servicios");
     expect(screen.getByRole("status")).toHaveTextContent("18 servicios");
     await objPersona.type(

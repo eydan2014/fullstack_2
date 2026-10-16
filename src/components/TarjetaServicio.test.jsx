@@ -2,12 +2,14 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import TarjetaServicio from "./TarjetaServicio";
-import { arrServiciosIniciales } from "../data/catalogo";
 
 describe("TarjetaServicio", () => {
   it("P01 muestra el servicio recibido mediante props RF04", () => {
     const objServicio = {
-      ...arrServiciosIniciales[0],
+      strTipo: "Consulta",
+      strDescripcion: "Datos de prueba",
+      strDuracion: "30 minutos",
+      strModalidad: "Presencial",
       strId: "CN099",
       strNombre: "Consulta de prueba",
       numPrecio: 24000,

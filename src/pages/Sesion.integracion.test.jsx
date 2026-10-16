@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest";
 import { screen } from "@testing-library/react";
 import { iniciar } from "../test/renderizarApp";
 
-describe("Sesion", () => {
-  it("P03 permite iniciar y cerrar la sesion de una cuenta activa RF02", async () => {
+describe("Sesion - integracion", () => {
+  it("I01 permite iniciar y cerrar la sesion de una cuenta activa RF02", async () => {
     const { objPersona } = iniciar("/sesion", "");
     await objPersona.click(
       screen.getByRole("button", { name: "Paciente", exact: true }),
